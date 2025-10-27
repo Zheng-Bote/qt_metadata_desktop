@@ -31,20 +31,7 @@
     - [SQLite3](#sqlite3)
   - [folder structure](#folder-structure)
   - [Usage/Examples/Tests](#usageexamplestests)
-- [API Reference](#api-reference)
-  - [Inputs](#inputs)
-  - [Outputs](#outputs)
-  - [Parameters](#parameters)
 - [Documentation](#documentation-1)
-  - [Architecture](#architecture)
-    - [Github](#github)
-      - [Github Repo](#github-repo)
-      - [Github Actions / Workflows](#github-actions--workflows)
-  - [Application](#application)
-  - [DevOps](#devops)
-  - [Github Page](#github-page)
-  - [Github Wiki](#github-wiki)
-  - [Comments](#comments)
   - [Screenshots](#screenshots)
 - [Authors and License](#authors-and-license)
   - [License](#license)
@@ -202,6 +189,11 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 ├── .gitignore
 ├── LICENSE
 ├── README.md
+├── docs
+│   └── img
+│       ├── exif.png
+│       ├── iptc.png
+│       └── xmp.png
 ├── src
 │   ├── CMakeLists.txt
 │   ├── CMakeLists.txt.user
@@ -223,7 +215,7 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 │   └── res.qrc
 └── tree.bak
 
-9 directories, 34 files
+11 directories, 37 files
 ```
 
 <!-- readme-tree end -->
