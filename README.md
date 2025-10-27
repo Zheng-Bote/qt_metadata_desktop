@@ -164,7 +164,6 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 ## folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -217,7 +216,6 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 
 11 directories, 37 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
