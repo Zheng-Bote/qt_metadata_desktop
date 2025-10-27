@@ -57,7 +57,7 @@
 
 ![QT](https://img.shields.io/badge/Community-6-41CD52?logo=qt)
 ![CXX](https://img.shields.io/badge/C++-23-blue?logo=cplusplus)
-![SQLite3](https://img.shields.io/badge/SQLite3-#003B57?logo=sqlite)
+![SQLite3](https://img.shields.io/badge/SQLite3-003B57?logo=sqlite)
 
 Desktop app to manage Exif/IPTC/XMP metadata tags
 
@@ -95,9 +95,6 @@ Desktop app to manage Exif/IPTC/XMP metadata tags
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Zheng-Bote/qt_metadata_desktop?logo=GitHub)](https://github.com/Zheng-Bote/qt_metadata_desktop/releases)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/qt_metadata_desktop)
 ![Status](https://img.shields.io/badge/Status-stable-green)
-
-![GitHub Created At](https://img.shields.io/github/created-at/Zheng-Bote/qt_metadata_desktop)
-![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/qt_metadata_desktop)
 
 ![GitHub Issues](https://img.shields.io/github/issues/Zheng-Bote/qt_metadata_desktop)
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Zheng-Bote/qt_metadata_desktop)
