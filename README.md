@@ -14,17 +14,20 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 **Table of Contents**
 
 - [Description](#description)
-  - [Features](#features)
+    - [Features](#features)
 - [Status](#status)
-  - [Documentation](#documentation)
-    - [README](#readme)
-    - [other Markdown files](#other-markdown-files)
+    - [Documentation](#documentation)
+      - [README](#readme)
+      - [other Markdown files](#other-markdown-files)
 - [Installation](#installation)
   - [Dependencies](#dependencies)
+    - [Conan](#conan)
+    - [CMake](#cmake)
+    - [QT](#qt)
+    - [SQLite3](#sqlite3)
   - [folder structure](#folder-structure)
   - [Usage/Examples/Tests](#usageexamplestests)
 - [API Reference](#api-reference)
@@ -165,7 +168,6 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 ## folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -193,6 +195,7 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 ├── src
 │   ├── CMakeLists.txt
 │   ├── CMakeLists.txt.user
+│   ├── conanfile.txt
 │   ├── configure
 │   │   └── rz_config.h.in
 │   ├── includes
@@ -210,9 +213,8 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 │   └── res.qrc
 └── tree.bak
 
-9 directories, 33 files
+9 directories, 34 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
