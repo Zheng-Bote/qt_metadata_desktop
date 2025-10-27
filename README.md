@@ -152,6 +152,7 @@ bla bla ... with a little help from my friends
 │       ├── repo-create_doctoc.yml_
 │       ├── repo-create_doctoc_md.yml
 │       └── repo-create_tree_readme.yml
+├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── src
@@ -174,7 +175,7 @@ bla bla ... with a little help from my friends
 │   └── res.qrc
 └── tree.bak
 
-9 directories, 32 files
+9 directories, 33 files
 ```
 <!-- readme-tree end -->
 
