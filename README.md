@@ -57,7 +57,9 @@
 ![CXX](https://img.shields.io/badge/C++-23-blue?logo=cplusplus)
 ![SQLite3](https://img.shields.io/badge/SQLite3-003B57?logo=sqlite)
 
-Desktop app to manage Exif/IPTC/XMP metadata tags
+Desktop app to manage Exif/IPTC/XMP metadata tags.
+
+Metadata are stored within a SQLite3 database (default: `qt_metadata_desktop.sqlite`)
 
 ### Features
 
@@ -78,9 +80,9 @@ Desktop app to manage Exif/IPTC/XMP metadata tags
 
 <br>
 
-- \[ ] runs on DOS/Windows
-- \[ ] runs on MacOS
-- \[ ] runs on Linux
+- \[X] runs on DOS/Windows
+- \[X] runs on MacOS
+- \[X] runs on Linux
 - \[ ] runs on iOS
 - \[ ] runs on Android
 - \[ ] runs on HarmonyOS
@@ -124,11 +126,7 @@ create ToC in Markdown files in folders
 # Installation
 
 ```bash
-mkdir build & cd build
-```
-
-```bash
-conan install ./src
+cd src & conan install
 ```
 
 ## Dependencies
@@ -162,6 +160,7 @@ The Qt framework contains a comprehensive set of highly intuitive and modularize
 SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
 
 [![SQLite3](https://img.shields.io/badge/SQLite3-003B57?logo=sqlite)](https://sqlite.org/)
+[![Public Domain License](https://img.shields.io/badge/License-Public_Domain-green)](https://en.wikipedia.org/wiki/Public_domain)
 
 ## folder structure
 
@@ -220,154 +219,29 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 
 ## Usage/Examples/Tests
 
-bla bla ... usage is intuitive and runs mostly automatically with no needs of any knowledge
+- on appliaction start, the default database will be loaded. If the db doesn't exists, a new new one will be created.
 
-```HTML
-<mark> under construction </mark>
-```
+- default tables and default metadata will be created, if not exist yet.
+  <br/><br/>
+- click into a cell to edit/modify the content.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# API Reference
-
-<hr>
-
-![GHA](https://img.shields.io/badge/Github-Action-black?logo=githubactions)
-
-_Inputs/Outputs will be filled automatically by `.github/workflows/repo-actions_docu.yml`_
-
-## Inputs
-
-## Outputs
-
-<hr>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Parameters
-
-**Workflow or program**
-
-| Parameter    | Type     | Description                          |
-| :----------- | :------- | :----------------------------------- |
-| `name`       | `string` | _Optional_ name-of-copyright-holder  |
-| `created`    | `string` | _Optional_ <YYYY>                    |
-| `version`    | `string` | _Optional_ \<v0.0.0>                 |
-| `link_left`  | `string` | _Optional_ link-to-contact-page      |
-| `link_right` | `string` | _Optional_ link-to-legal-notice-page |
+- choose from the menu `DB -> save db` or use `<STRG>+<S>` to save the metadata to the db
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Documentation
 
-see also: <https://linktodocumentation>
-
-## Architecture
-
-### Github
-
-#### Github Repo
-
-```mermaid
-block-beta
-  columns 4
-  Repo:4
-  block:group1:1
-    columns 1
-    id0[".github"]
-    block:group2:1
-      columns 1
-      id1[["workflows"]]
-      id2[["actions"]]
-    end
-  end
-  docs dist src
-  block:group3:4
-    %% columns auto (default)
-    A["gh-pages"] B["gh-wiki"]
-  end
-```
-
-#### Github Actions / Workflows
-
-```mermaid
-flowchart TD;
-    A[Workflow]-. parameter .->B[[callable Workflow]]
-    B-- parameter -->C[Action]
-    C-->D(README)
-
-    A[Workflow]-. parameter .->E[[callable Workflow]]
-    E-- parameter -->F[Action]
-    F-->J(Markdown files)
-
-    A[Workflow]-->K[[Workflow]]
-    K-->L[Action]
-    L-->M("GH-Pages")
-
-    A[Workflow]-->N[[Workflow]]
-    N-->O[Action]
-    O-->P("GH-Wiki")
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Application
-
-```mermaid
-architecture-beta
-    group api(cloud)[API]
-
-    service db(database)[Database] in api
-    service server0(server)[Webserver] in api
-    service disk2(disk)[Storage] in api
-    service server(server)[Appserver] in api
-
-    db:L -- R:server
-    server0:T -- B:server
-    disk2:T -- B:server
-```
-
-## DevOps
-
-```mermaid
-pie title me
-         "ideas" : 90
-         "time for realizations" : 7
-         "money for realizations" : 3
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Github Page
-
-[![GH-Page](https://img.shields.io/badge/Github-Pages-black?logo=github)](https://www.github.com/Zheng-Bote)
-
-## Github Wiki
-
-[![GH-Wiki](https://img.shields.io/badge/Github-Wiki-black?logo=github)](https://www.github.com/Zheng-Bote)
-
-## Comments
-
-> \[!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> \[!TIP]
-> Helpful advice for doing things better or more easily.
-
-> \[!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> \[!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> \[!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+> \[!TIP]
+> click into a cell to edit / modify\
+> `<STRG>+<S>` to safe into db
+
+![App Screenshot](https://github.com/Zheng-Bote/qt_metadata_desktop/blob/main/docs/img/exif.png)
+
+![App Screenshot](https://github.com/Zheng-Bote/qt_metadata_desktop/blob/main/docs/img/iptc.png)
+
+![App Screenshot](https://github.com/Zheng-Bote/qt_metadata_desktop/blob/main/docs/img/xmp.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
