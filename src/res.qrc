@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/Eo_circle_green_letter-m.png</file>
+    </qresource>
+</RCC>
