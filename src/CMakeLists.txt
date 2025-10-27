@@ -30,6 +30,7 @@ configure_file("${CMAKE_SOURCE_DIR}/configure/rz_config.h.in"
 
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Sql Concurrent)
+find_package (SQLite3 REQUIRED)
 
 qt_standard_project_setup()
 
@@ -53,6 +54,7 @@ target_link_libraries(qt_metatags_desktop
         Qt6::Widgets
         Qt6::Sql
         Qt6::Concurrent
+        SQLite::SQLite3
 )
 
 include(GNUInstallDirs)

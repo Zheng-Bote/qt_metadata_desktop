@@ -14,14 +14,15 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [Description](#description)
-    - [Features](#features)
+  - [Features](#features)
 - [Status](#status)
-    - [Documentation](#documentation)
-      - [README](#readme)
-      - [other Markdown files](#other-markdown-files)
+  - [Documentation](#documentation)
+    - [README](#readme)
+    - [other Markdown files](#other-markdown-files)
 - [Installation](#installation)
   - [Dependencies](#dependencies)
   - [folder structure](#folder-structure)
@@ -122,15 +123,50 @@ create ToC in Markdown files in folders
 
 # Installation
 
-bla bla ... everything easy and green with No Code/Low code and without any costs
+```bash
+mkdir build & cd build
+```
+
+```bash
+conan install ./src
+```
 
 ## Dependencies
 
-bla bla ... with a little help from my friends
+### Conan
+
+Conan, software package manager for C and C++ developers
+
+[![Conan](https://img.shields.io/badge/Conan-v2+-6699CB?logo=conan)](https://github.com/conan-io/conan)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+### CMake
+
+CMake: A Powerful Software Build System
+
+[![CMake](https://img.shields.io/badge/CMake-v3.23+-064F8C?logo=cmake)](https://github.com/conan-io/conan)
+[![BSD-3 License](https://img.shields.io/badge/License-BSD_3-green.svg)](https://choosealicense.com/licenses/bsd-3-clause/)
+
+### QT
+
+> \[!NOTE]
+> _QT6 - Community Edition_ >= 6.10
+
+The Qt framework contains a comprehensive set of highly intuitive and modularized C++ library classes and is loaded with APIs to simplify your application development. Qt produces highly readable, easily maintainable and reusable code with high runtime performance and small footprint – and it's cross-platform.
+
+[![QT](https://img.shields.io/badge/Community-for_Open_Source_Development-black?logo=qt)](https://www.qt.io/download-open-source)
+[![LGPL](https://img.shields.io/badge/License-LGPL_v3-green.svg)](https://choosealicense.com/licenses/lgpl-3.0/) _see also:_[Obligations of the GPL and LGPL](https://www.qt.io/licensing/open-source-lgpl-obligations)
+
+### SQLite3
+
+SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
+
+[![SQLite3](https://img.shields.io/badge/SQLite3-003B57?logo=sqlite)](https://sqlite.org/)
 
 ## folder structure
 
 <!-- readme-tree start -->
+
 ```
 .
 ├── .github
@@ -176,6 +212,7 @@ bla bla ... with a little help from my friends
 
 9 directories, 32 files
 ```
+
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -341,7 +378,7 @@ pie title me
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2024 ZHENG Robert
+Copyright (c) 2025 ZHENG Robert
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
