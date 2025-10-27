@@ -14,17 +14,20 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 **Table of Contents**
 
 - [Description](#description)
-  - [Features](#features)
+    - [Features](#features)
 - [Status](#status)
-  - [Documentation](#documentation)
-    - [README](#readme)
-    - [other Markdown files](#other-markdown-files)
+    - [Documentation](#documentation)
+      - [README](#readme)
+      - [other Markdown files](#other-markdown-files)
 - [Installation](#installation)
   - [Dependencies](#dependencies)
+    - [Conan](#conan)
+    - [CMake](#cmake)
+    - [QT](#qt)
+    - [SQLite3](#sqlite3)
   - [folder structure](#folder-structure)
   - [Usage/Examples/Tests](#usageexamplestests)
 - [API Reference](#api-reference)
