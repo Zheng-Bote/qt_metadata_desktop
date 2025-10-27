@@ -192,6 +192,11 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 ├── .gitignore
 ├── LICENSE
 ├── README.md
+├── docs
+│   └── img
+│       ├── exif.png
+│       ├── iptc.png
+│       └── xmp.png
 ├── src
 │   ├── CMakeLists.txt
 │   ├── CMakeLists.txt.user
@@ -213,7 +218,7 @@ SQLite is a C-language library that implements a small, fast, self-contained, hi
 │   └── res.qrc
 └── tree.bak
 
-9 directories, 34 files
+11 directories, 37 files
 ```
 <!-- readme-tree end -->
 
